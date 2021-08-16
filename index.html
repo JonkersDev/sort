@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algarithm Visualizer</title>
+    <link rel="stylesheet" href="sort.css">
+    <link rel="icon" href="./images/sort-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="tutorial">
+        <div class="tutorial-card">
+            <div class="tutorial-page">
+                <p>1/5</p>
+        <h1>Welcome to my Sorting Algorithm Visualizer</h1>
+        <p>This tutorial will walk you through all the features of this application.</p>
+        <img src="./images/sort-icon.png" alt="">
+            </div>
+            <div class="tutorial-btns">
+                <button class="skip-tut">Skip Tutorial</button>
+                <button class="previous">Previous</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="header"><img src="./images/sort-icon.png" alt=""> Sorting Algorithms Visualizer <i class="far fa-question-circle tut"></i></div>
+    <header>
+        <button onclick="createArray()" class="btn">New Array</button>
+        <div>
+            <label class="btn">Array Length:</label>
+            <input type="range" max="800" min="10" class="array-input btn" value="200">
+        </div>
+        <div>
+            <label for="">Speed:</label>
+            <button class="slow"><i class="fas fa-angle-right"></i></button>
+            <button class="medium active"><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
+            <button class="fast"><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></button>
+        </div>
+        <div><button class="merge btn">Merge Sort</button>
+            <button class="quick btn">Quick Sort</button>
+            <button class="bubble btn">Bubble Sort</button></div>
+    </header>
+    <div class="array-container"></div>
+    
+    <script src="./sort.js"></script>
+</body>
+</html>
